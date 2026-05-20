@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesys Cloud Snippet Test Bench</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f5f7fa;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 { color: #2c3e50; }
+        p { color: #7f8c8d; line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Genesys Cloud Testing Environment</h1>
+        <p>This is a dummy staging site for testing our Genesys integration deployment.</p>
+        <p>The Web Messenger / Chat snippet should initialize in the corner of this screen.</p>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.aps1.pure.cloud/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-aps1',
+    deploymentId: '9055c77c-97db-48c7-8244-dc8e596a7861'
+  });
+</script>
+    
+    <!-- End Genesys Snippet -->
+
+</body>
+</html>
